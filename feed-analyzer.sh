@@ -17,7 +17,7 @@ echo "  Top 5 Most Active Users in $FILE"
 echo "============================================================"
 
 # Extract the Username column properly, then sort, count, and display top 5
-python3 -c "
+python -c "
 import csv, sys
 with open('$FILE', encoding='utf-8') as f:
     reader = csv.DictReader(f)
